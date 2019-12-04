@@ -25,7 +25,7 @@ echo "This is scripting" > $doc_root/testserver/index.html
 sudo touch $conf_path/testapache.conf
 echo -e "<Virtualhost *.80> \ndocumentroot $doc_root/testserver \n</Virtualhost>" > $conf_path/testapache.conf
 
-#Her starting apache service
+#Here starting apache service
 
 sudo systemctl start apache2
 sudo systemctl enable apache2
